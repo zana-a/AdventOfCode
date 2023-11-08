@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>adventofcode</artifactId>
+    <groupId>adventofcode</groupId>
+    <version>2015.0.0</version>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.java.version>21</project.java.version>
+        <project.encoding>UTF-8</project.encoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <encoding>${project.encoding}</encoding>
+                    <source>${project.java.version}</source>
+                    <target>${project.java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>_2015</module>
+    </modules>
+</project>
